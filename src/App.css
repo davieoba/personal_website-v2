@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container{
+    padding: 20px;
+} */
+
+.hero_page{
+    /* background-color: #3455db; */
+    background-image: url('./images/wickedbackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
