@@ -4,6 +4,8 @@ import styles from './about.module.css'
 import Header from './../Components/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import {FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import { AiFillMail } from 'react-icons/ai'
+
 
 function About() {
   const navigate = useNavigate()
@@ -21,7 +23,7 @@ function About() {
             Looking for my{' '}
             <span className={styles.resume_higlight}>Resume</span>?
           </h2>
-          <a className={styles.link} onClick={handleResume} >
+          <a className={styles.link} onClick={handleResume}>
             {' '}
             Download Resume{' '}
           </a>
@@ -98,21 +100,36 @@ function About() {
             <div className={styles.icons}>
               <h4>Get in touch </h4>
               <div id={styles.social}>
-                <FaGithub
-                  size={26}
-                  fill="#1f2937"
-                  style={{ cursor: 'pointer' }}
-                />
-                <FaLinkedin
-                  size={26}
-                  fill="#1f2937"
-                  style={{ cursor: 'pointer' }}
-                />
-                <FaTwitter
-                  size={26}
-                  fill="#1f2937"
-                  style={{ cursor: 'pointer' }}
-                />
+                <a href="https://www.github.com/davieoba">
+                  <FaGithub
+                    size={24}
+                    fill="#1f2937"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/david-bodunrin-oluwaseun">
+                  <FaLinkedin
+                    size={24}
+                    fill="#1f2937"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </a>
+
+                <a href="https://www.twitter.com/bodunrindavid">
+                  <FaTwitter
+                    size={24}
+                    fill="#1f2937"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </a>
+
+                <a href="mailto:bodunrindavidbond@gmail.com">
+                  <AiFillMail
+                    size={30}
+                    fill="#1f2937"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </a>
               </div>
             </div>
           </div>

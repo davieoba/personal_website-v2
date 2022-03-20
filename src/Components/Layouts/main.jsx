@@ -6,6 +6,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { FaTwitter } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import logo from './../../images/programming.svg'
+import { AiFillMail } from 'react-icons/ai'
 
 function Main() {
   return (
@@ -20,38 +21,28 @@ function Main() {
       </h1>
 
       <div className={styles.social_media}>
-        <a
-          href="https://www.github.com/davieoba"
-          // onClick={handleGit}
-          className={styles.link}
-        >
+        <a href="https://www.github.com/davieoba" className={styles.link}>
           <FaGithub size={30} />
         </a>
-        <a
-          href="https://www.twitter.com/bodunrindavid"
-          // onClick={handleTwitter}
-          className={styles.link}
-        >
+        <a href="https://www.twitter.com/bodunrindavid" className={styles.link}>
           <FaTwitter size={30} />
         </a>
         <a
           href="https://www.linkedin.com/in/david-bodunrin-oluwaseun"
-          // onClick={handleLink}
+          className={styles.link}
         >
           <BsLinkedin size={30} />
+        </a>
+        <a href="mailto:bodunrindavidbond@gmail.com" className={styles.link}>
+          <AiFillMail size={35} />
         </a>
       </div>
 
       {/* <div id={styles.wrapper}> */}
-        <h3 className={styles.small_intro}>
-          I love trying out new things, so that I can achieve my childhood dream
-          a -<span className={styles.hack}>hacker 😅</span>
-        </h3>
-
-        {/* <div id={styles.image}> */}
-          {/* <img src={logo} alt="me" /> */}
-        {/* </div> */}
-      {/* </div> */}
+      <h3 className={styles.small_intro}>
+        I love trying out new things, so that I can achieve my childhood dream a
+        -<span className={styles.hack}>hacker 😅</span>
+      </h3>
     </main>
   )
 }

@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { AiFillMail } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import styles from './footer.module.css'
 function Footer() {
@@ -51,6 +52,14 @@ function Footer() {
             <a href="https://www.twitter.com/bodunrindavid">
               <FaTwitter
                 size={24}
+                fill="#fafaff"
+                style={{ cursor: 'pointer' }}
+              />
+            </a>
+
+            <a href="mailto:bodunrindavidbond@gmail.com">
+              <AiFillMail
+                size={30}
                 fill="#fafaff"
                 style={{ cursor: 'pointer' }}
               />

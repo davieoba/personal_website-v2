@@ -47,6 +47,7 @@ function Home() {
                 <li>Node.js</li>
                 <li>JavaScript</li>
                 <li>MongoDB</li>
+                <li>Git / Github</li>
               </ul>
 
               <div id={styles.intro}>
